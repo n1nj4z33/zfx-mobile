@@ -1,0 +1,14 @@
+# Environments
+env
+
+# Python
+__pycache__
+
+# PyTest
+.pytest_cache
+
+# IDE
+.vscode
+
+# Ignore dynaconf secret files
+.secrets.*

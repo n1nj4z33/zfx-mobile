@@ -1,0 +1,36 @@
+# Keep tools versions in sync with CI linters.
+# TODO check versions
+---
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+      - id: end-of-file-fixer
+      - id: no-commit-to-branch
+        args: [-b, master]
+      - id: trailing-whitespace
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.2.0
+    hooks:
+      - id: pyupgrade
+        args: [--py39-plus]
+
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/pylint
+    rev: v2.15.5
+    hooks:
+      - id: pylint
+        args: [--rcfile=.pylintrc, '--disable=import-error,fixme']

@@ -1,0 +1,6 @@
+[master]
+
+[messages control]
+
+disable =
+    missing-docstring,
