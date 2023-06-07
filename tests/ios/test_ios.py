@@ -8,7 +8,8 @@ from steps.ios import *
 
 @scenario("ios.feature", "iOS Scenario")
 def test_ios(test_settings, appium_service, driver):
+    print(appium_service)
+    assert test_settings is not None
     ios_step_given(driver)
     ios_step_when(driver)
     ios_step_then(driver)
-    assert test_settings is not None
