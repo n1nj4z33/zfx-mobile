@@ -1,8 +1,7 @@
 from typing import Callable, cast
 
 import pytest
-from appium import webdriver
-from appium.options.android import UiAutomator2Options
+
 from appium.webdriver.appium_service import AppiumService
 
 from config import settings
@@ -61,23 +60,3 @@ def appium_service():
     )
     yield service
     service.stop()
-
-
-def android_options():
-    options = UiAutomator2Options()
-    options.platformVersion = "10"
-    options.app = "./resources/android.apk"
-    options.udid = "emulator-5554"
-    caps = dict(autoGrantPermissions=True)
-    options.load_capabilities(caps)
-    return options
-
-
-@pytest.fixture(scope="function")
-def android_driver():
-    appium_server_url = "http://localhost:4723"
-    driver = webdriver.Remote(
-        command_executor=appium_server_url, options=android_options()
-    )
-    yield driver
-    driver.quit()

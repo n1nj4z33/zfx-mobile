@@ -1,5 +1,3 @@
-# Keep tools versions in sync with CI linters.
-# TODO check versions
 ---
 repos:
 

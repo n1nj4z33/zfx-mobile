@@ -7,9 +7,9 @@ from steps.android import *
 
 
 @scenario("android.feature", "Android Scenario")
-def test_android(test_settings, appium_service, android_driver):
+def test_android(test_settings, appium_service, driver):
     print(appium_service)
     assert test_settings is not None
-    assert "API Demos" == android_step_given(android_driver)
-    assert "API Demos" == android_step_when(android_driver)
-    assert "API Demos" == android_step_then(android_driver)
+    assert "API Demos" == android_step_given(driver)
+    assert "API Demos" == android_step_when(driver)
+    assert "API Demos" == android_step_then(driver)
