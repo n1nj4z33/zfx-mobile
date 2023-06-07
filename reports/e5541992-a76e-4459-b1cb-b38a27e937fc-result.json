@@ -1,0 +1,51 @@
+{
+    "name": "iOS Scenario",
+    "status": "passed",
+    "steps": [
+        {
+            "name": "Given ios_step_given",
+            "status": "passed",
+            "start": 1686153799943,
+            "stop": 1686153799943
+        },
+        {
+            "name": "When ios_step_when",
+            "status": "passed",
+            "start": 1686153799943,
+            "stop": 1686153799943
+        },
+        {
+            "name": "Then ios_step_then",
+            "status": "passed",
+            "start": 1686153799943,
+            "stop": 1686153799943
+        }
+    ],
+    "start": 1686153799943,
+    "stop": 1686153799943,
+    "uuid": "456d9b06-1c82-f0b9-ce1f-40237120ff56",
+    "historyId": "456d9b061c82f0b9ce1f40237120ff56",
+    "fullName": "features\\ios.feature:iOS Scenario",
+    "labels": [
+        {
+            "name": "host",
+            "value": "n1nj4z33"
+        },
+        {
+            "name": "thread",
+            "value": "9876-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest-bdd"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "feature",
+            "value": "iOS Test Suite"
+        }
+    ]
+}

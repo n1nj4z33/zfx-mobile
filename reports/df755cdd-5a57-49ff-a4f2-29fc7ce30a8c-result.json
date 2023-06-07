@@ -1,0 +1,51 @@
+{
+    "name": "Android Scenario",
+    "status": "passed",
+    "steps": [
+        {
+            "name": "Given android_step_given",
+            "status": "passed",
+            "start": 1686153799204,
+            "stop": 1686153799571
+        },
+        {
+            "name": "When android_step_when",
+            "status": "passed",
+            "start": 1686153799571,
+            "stop": 1686153799614
+        },
+        {
+            "name": "Then android_step_then",
+            "status": "passed",
+            "start": 1686153799614,
+            "stop": 1686153799665
+        }
+    ],
+    "start": 1686153799204,
+    "stop": 1686153799665,
+    "uuid": "fcb7eb5a-1e58-f3ca-e1b2-92a951e7c33b",
+    "historyId": "fcb7eb5a1e58f3cae1b292a951e7c33b",
+    "fullName": "features\\android.feature:Android Scenario",
+    "labels": [
+        {
+            "name": "host",
+            "value": "n1nj4z33"
+        },
+        {
+            "name": "thread",
+            "value": "9876-MainThread"
+        },
+        {
+            "name": "framework",
+            "value": "pytest-bdd"
+        },
+        {
+            "name": "language",
+            "value": "cpython3"
+        },
+        {
+            "name": "feature",
+            "value": "Android Test Suite"
+        }
+    ]
+}

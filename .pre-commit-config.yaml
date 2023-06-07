@@ -9,8 +9,6 @@ repos:
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
       - id: end-of-file-fixer
-      - id: no-commit-to-branch
-        args: [-b, master]
       - id: trailing-whitespace
 
   - repo: https://github.com/asottile/pyupgrade

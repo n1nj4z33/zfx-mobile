@@ -1,2 +1,2 @@
 [default]
-test_service_name = "service-templates-api"
+test_service_name = "service-app-api"

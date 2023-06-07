@@ -1,2 +1,5 @@
 pytest==7.3.1
 pytest-bdd==6.1.1
+selenium==4.9.1
+appium-python-client==2.10.1
+allure-pytest-bdd==2.13.2
