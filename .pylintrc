@@ -4,3 +4,5 @@
 
 disable =
     missing-docstring,
+    too-few-public-methods,
+    redefined-outer-name,

@@ -1,2 +1,9 @@
 [default]
 test_service_name = "service-app-api"
+
+appium_host = "localhost"
+appium_port = "4723"
+
+app = "./resources/ios/app.zip"
+device = "iPhone Simulator"
+platform_version = "10"

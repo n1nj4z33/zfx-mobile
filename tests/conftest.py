@@ -1,7 +1,6 @@
 from typing import Callable, cast
 
 import pytest
-
 from appium.webdriver.appium_service import AppiumService
 
 from config import settings
@@ -40,21 +39,15 @@ def test_settings():
     return settings
 
 
-# Appium
-
-APPIUM_HOST = "localhost"
-APPIUM_PORT = "4723"
-
-
 @pytest.fixture(scope="session")
 def appium_service():
     service = AppiumService()
     service.start(
         args=[
             "--address",
-            APPIUM_HOST,
+            settings.appium_host,
             "--port",
-            APPIUM_PORT,
+            settings.appium_port,
         ],
         timeout_ms=20000,
     )

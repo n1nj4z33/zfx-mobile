@@ -1,5 +1,12 @@
 # zfx-mobile
 
+### Pre-commit
+
+```bash
+pip install pre-commit
+pre-commit install --install-hooks
+```
+
 ### Install dependencies
 
 ```bash
@@ -23,4 +30,8 @@ appium driver install uiautomator2
 
 ```bash
 python -m pytest -m ios
+```
+
+```bash
+python -m pytest -m android
 ```
